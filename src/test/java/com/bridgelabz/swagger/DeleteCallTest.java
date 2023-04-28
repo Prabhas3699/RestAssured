@@ -2,6 +2,7 @@ package com.bridgelabz.swagger;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class DeleteCallTest {
@@ -13,6 +14,6 @@ public class DeleteCallTest {
         System.out.println("Time:" + response.getTime());
         System.out.println("Response Body: " + response.asPrettyString());
 
-//        Assert.assertEquals(response.statusCode(), 200);
+        Assert.assertEquals(response.statusCode(), 200);
     }
 }
