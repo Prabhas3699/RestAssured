@@ -19,7 +19,8 @@ public class TwitterApiTest {
                 oauth("s26I3PG1Ty6YbttW65nvCowQC",
                         "QE8RhpxM8URXNVf9eesk7Y7gYX9PPFqENsQe7Eb3WzXpAjrPR8",
                         "1651505801704656896-MVF9eYzrAccR0WYtZUkDjEl3GjsJHK",
-                        "RmS6bR0b1tLkgJ1pzbMzjwcqB0VWDxt9Ppz5rESA5xSKB").post("https://api.twitter.com/1.1/statuses/update.json?status=Hello");
+                        "RmS6bR0b1tLkgJ1pzbMzjwcqB0VWDxt9Ppz5rESA5xSKB").
+                post("https://api.twitter.com/1.1/statuses/update.json?status=Hello");
 
         System.out.println("Body : "+response.asPrettyString());
         System.out.println("status code : "+response.getStatusCode());
